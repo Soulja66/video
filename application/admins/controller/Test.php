@@ -14,7 +14,7 @@ class Test extends Controller
 {
     public function index(){
         $this->db = new Sysdb;
-        $res = $this->db->table('admins')->where(array('id'=>1))->item();
+        $res = $this->db->table('admins')->field('id,username')->where(array('id'=>1))->lists();
         dump($res);
     }
 }

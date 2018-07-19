@@ -15,7 +15,7 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
     'app_trace'              => false,
     // 应用模式状态
@@ -235,5 +235,22 @@ return [
         'type'      => 'bootstrap',
         'var_page'  => 'page',
         'list_rows' => 15,
+    ],
+
+//    验证码配置
+    'captcha' =>[
+        //验证码的字符集
+        'codeSet' => '23456789abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ',
+        //设置验证码字体大小
+        'fontSize' => 18,
+        //添加混淆曲线
+        'useCurve' => false,
+        //设置图片的高度、宽度
+        'imageW' => 150,
+        'imageH' => 35,
+        //设置验证码位数
+        'length' => 4,
+        //验证成功后重置
+        'reset' => true,
     ],
 ];

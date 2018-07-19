@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/plugins/layui/css/layui.css">
+    <script type="text/javascript" src="__STATIC__/plugins/layui/layui.js"></script>
+    <style type="text/css">
+        .header {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #2e6da4;
+            color: #ffffff;
+        }
+
+        .title {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .userinfo {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .userinfo a {
+            color: #ffffff;
+        }
+
+        .menu {
+            width: 200px;
+            background: #333744;
+            position: absolute;
+        }
+
+        .layui-colla-item{
+            border: none;
+        }
+
+        .layui-collapse{
+            border: none;
+        }
+
+        .layui-colla-title{
+            background: #01AAED;
+            color: #ffffff;
+        }
+
+        .layui-colla-content{
+            border: none;
+            padding: 0px;
+        }
+
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="header">
+    <span class="title">后台管理系统</span>
+    <span class="userinfo">陈冰清【系统管理员】<span><a href="javascript">退出</a> </span></span>
+
+</div>
+<!--menu-->
+<div class="menu" id="menu">
+    <div class="layui-collapse" lay-accordion>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">杜甫</h2>
+            <div class="layui-colla-content layui-show">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item"><a href="">产品</a></li>
+                    <li class="layui-nav-item"><a href="">大数据</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">李清照</h2>
+            <div class="layui-colla-content">内容区域</div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">鲁迅</h2>
+            <div class="layui-colla-content">内容区域</div>
+        </div>
+    </div>
+
+</div>
+<!--主操作頁面-->
+<div class="main">
+    <iframe src="/admins.php/admins/Home/welcome" onload="resetMainHeight(this)" style="width: 100%;height: 100%;" frameborder="0" scrolling="0"></iframe>
+</div>
+<script>
+    //注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+        var element = layui.element;
+        $ = layui.jquery;
+        resetMenuHeight();
+        //…
+    });
+    //重新设置菜单容器高度
+    function resetMenuHeight() {
+        var height = document.documentElement.clientHeight - 50;
+        $('#menu').height(height);
+    }
+    function resetMainHeight(obj) {
+        var height = parent.document.documentElement.clientHeight - 53;
+        $(obj).parent('div').height(height);
+    }
+</script>
+</body>
+</html>
