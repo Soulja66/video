@@ -33,6 +33,16 @@ class Admin extends BaseAdmin
         return $this->fetch();
     }
 
+    //删除管理员
+    public function delete(){
+        $id = (int)input('post.id');
+        $res = $this->db->table('admins')->where(array('id'=>$id))->delete();
+        if(!$res){
+            exit(json_encode(array('code'=>'1','msg'=>'删除失败')));
+        }
+        exit(json_encode(array('code'=>'0','msg'=>'删除成功')));
+    }
+
     //保存管理员
     public function save()
     {
@@ -58,6 +68,7 @@ class Admin extends BaseAdmin
         //密码处理
 //        $data['password'] = md5($data('username').$password);
         //检查用户名是否已经存在
+        $res = true;
         if ($id == 0) {
             $item = $this->db->table('admins')->where(array('username' => $data['username']))->item();
             if ($item) {
@@ -65,9 +76,9 @@ class Admin extends BaseAdmin
             }
             $data['add_time'] = time();
             //保存用户
-            $res = $this->db->table('admins')->insert($data);
+            $this->db->table('admins')->insert($data);
         }else{
-            $res = $this->db->table('admins')->where(array('id'=>$id))->update($data);
+            $this->db->table('admins')->where(array('id'=>$id))->update($data);
         }
 
         if (!$res) {

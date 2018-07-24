@@ -47,7 +47,7 @@
             <td>{:date("Y-m-d H:m:s",$vo.add_time)}</td>
             <td>
                 <button class="layui-btn layui-btn-xs" onclick="add({$vo.id})">编辑</button>
-                <button class="layui-btn layui-btn-danger layui-btn-xs">删除</button>
+                <button class="layui-btn layui-btn-danger layui-btn-xs" onclick="del({$vo.id})">删除</button>
             </td>
         </tr>
     {/volist}
@@ -66,6 +66,23 @@
             shade: 0.3,
             area: ['480px', '420px'],
             content: '/admins.php/admins/Admin/add?id='+id //iframe的url
+        });
+    }
+    
+    function del(id) {
+        layer.confirm('确定要删除吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            $.post('/admins.php/admins/Admin/delete',{'id':id},function (res) {
+                if(res.code>0){
+                    layer.alert(res.msg,{icon:2});
+                }else{
+                    layer.msg(res.msg);
+                    setTimeout(function () {
+                        window.location.reload();
+                    },1000);
+                }
+            },'json');
         });
     }
 </script>
