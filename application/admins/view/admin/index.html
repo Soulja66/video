@@ -42,11 +42,11 @@
             <td>{$vo.id}</td>
             <td>{$vo.username}</td>
             <td>{$vo.truename}</td>
-            <td>{$vo.gid}</td>
+            <td>{:isset($data['groups'][$vo.gid])?$data['groups'][$vo.gid]['title']:''}</td>
             <td>{$vo.status==0?'正常':'<span style="color: red">禁用</span>'}</td>
             <td>{:date("Y-m-d H:m:s",$vo.add_time)}</td>
             <td>
-                <button class="layui-btn layui-btn-xs">编辑</button>
+                <button class="layui-btn layui-btn-xs" onclick="add({$vo.id})">编辑</button>
                 <button class="layui-btn layui-btn-danger layui-btn-xs">删除</button>
             </td>
         </tr>
@@ -59,13 +59,13 @@
         $ = layui.jquery;
     });
     //管理员添加方法
-    function add() {
+    function add(id) {
         layer.open({
             type: 2,
-            title: '添加管理员',
+            title: id>0 ? '编辑管理员':'添加管理员',
             shade: 0.3,
             area: ['480px', '420px'],
-            content: '/admins.php/admins/Admin/add' //iframe的url
+            content: '/admins.php/admins/Admin/add?id='+id //iframe的url
         });
     }
 </script>
