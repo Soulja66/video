@@ -1,0 +1,2245 @@
+---------------------------------------------------------------
+[ 2018-08-08T21:21:56+08:00 ] 127.0.0.1 GET /admins.php/admins/Menu/index
+[ info ] www.php.demo/admins.php/admins/Menu/index [运行时间：5.707327s][吞吐率：0.18req/s] [内存消耗：1,569.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:21:57+08:00 ] 127.0.0.1 GET /admins.php/admins/Account/login
+[ info ] www.php.demo/admins.php/admins/Account/login [运行时间：0.423024s][吞吐率：2.36req/s] [内存消耗：1,656.95kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Account',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admins\controller\Account->login[ D:\WWW\video\application\admins\controller\Account.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\account\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:21:59+08:00 ] 127.0.0.1 GET /admins.php/captcha.html
+[ info ] www.php.demo/admins.php/captcha.html [运行时间：2.037116s][吞吐率：0.49req/s] [内存消耗：1,365.63kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\WWW\video\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:22:39+08:00 ] 127.0.0.1 POST /admins.php/admins/account/dologin
+[ info ] www.php.demo/admins.php/admins/account/dologin [运行时间：3.495200s][吞吐率：0.29req/s] [内存消耗：2,366.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'account',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '56',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.php.demo',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'username' => '陈冰清',
+  'pwd' => '1',
+  'verifycode' => 'we',
+)
+[ info ] [ RUN ] app\admins\controller\Account->dologin[ D:\WWW\video\application\admins\controller\Account.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.305017s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.623036s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `username` = '陈冰清' LIMIT 1 [ RunTime:0.160009s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:22:42+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：2.233128s][吞吐率：0.45req/s] [内存消耗：2,420.83kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.227013s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.116006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.529031s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.296017s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:22:43+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,613.73kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:22:51+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.199012s][吞吐率：5.02req/s] [内存消耗：1,611.77kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:25:59+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：7.607435s][吞吐率：0.13req/s] [内存消耗：2,366.17kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.php.demo',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"\"'  WHERE  `names` = 'site' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:26:02+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：1.133065s][吞吐率：0.88req/s] [内存消耗：1,611.72kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:26:23+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：0.096005s][吞吐率：10.42req/s] [内存消耗：2,366.17kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.php.demo',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"\"'  WHERE  `names` = 'site' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:26:24+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,612.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:31:14+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.779045s][吞吐率：1.28req/s] [内存消耗：1,796.76kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: site[D:\WWW\video\runtime\temp\c80a778520edb2d776251e70977a9bce.php:30]
+---------------------------------------------------------------
+[ 2018-08-08T21:37:40+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,752.31kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:37:49+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：0.442026s][吞吐率：2.26req/s] [内存消耗：2,366.17kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.php.demo',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"\"'  WHERE  `names` = 'site' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:37:51+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,611.99kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:39:18+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：1,796.49kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: site[D:\WWW\video\runtime\temp\c80a778520edb2d776251e70977a9bce.php:23]
+---------------------------------------------------------------
+[ 2018-08-08T21:39:28+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：1,751.99kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:39:31+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：2,366.61kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'origin' => 'http://www.php.demo',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'title' => 'php',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"php\"'  WHERE  `names` = 'site' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:39:32+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,612.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:42:22+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：1,752.31kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:42:31+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：0.125008s][吞吐率：8.00req/s] [内存消耗：2,366.70kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '12',
+  'origin' => 'http://www.php.demo',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'title' => 'phpwww',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"phpwww\"'  WHERE  `names` = 'site' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:42:32+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,611.99kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:47:33+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.137007s][吞吐率：7.30req/s] [内存消耗：2,539.13kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+  0 => 'site',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:47:37+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.128007s][吞吐率：7.81req/s] [内存消耗：2,398.45kb] [文件加载：52]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+  0 => 'site',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:47:39+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：0.131008s][吞吐率：7.63req/s] [内存消耗：2,368.35kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'origin' => 'http://www.php.demo',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'title' => 'phpwww2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"phpwww2\"'  WHERE  `names` = 'site' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:47:41+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.131007s][吞吐率：7.63req/s] [内存消耗：2,398.45kb] [文件加载：52]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+  0 => 'site',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:51:38+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：2,398.45kb] [文件加载：52]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+  0 => 'site',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:51:50+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.197012s][吞吐率：5.08req/s] [内存消耗：2,612.89kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'role',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: admin[D:\WWW\video\runtime\temp\86fecffd9b7f673b20f6547cbd6d9148.php:67]
+---------------------------------------------------------------
+[ 2018-08-08T21:52:59+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.169010s][吞吐率：5.92req/s] [内存消耗：2,423.25kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'role',
+  2 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:52:59+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,614.69kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:58:12+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.226013s][吞吐率：4.42req/s] [内存消耗：2,571.43kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:58:12+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:58:15+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.130008s][吞吐率：7.69req/s] [内存消耗：2,398.73kb] [文件加载：52]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:58:29+08:00 ] 127.0.0.1 POST /admins.php/admins/site/save
+[ info ] www.php.demo/admins.php/admins/site/save [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：2,369.05kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'site',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'content-length' => '78',
+  'origin' => 'http://www.php.demo',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'title' => '陈冰清的个人网站',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->save[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sites`  SET `values`='\"\\u9648\\u51b0\\u6e05\\u7684\\u4e2a\\u4eba\\u7f51\\u7ad9\"'  WHERE  `names` = 'site' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:58:30+08:00 ] 127.0.0.1 GET /admins.php/admins/Site/index
+[ info ] www.php.demo/admins.php/admins/Site/index [运行时间：0.130008s][吞吐率：7.69req/s] [内存消耗：2,399.04kb] [文件加载：52]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Site',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Site/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Site->index[ D:\WWW\video\application\admins\controller\Site.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\site\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:58:37+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.199012s][吞吐率：5.02req/s] [内存消耗：2,425.59kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:58:37+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T21:59:40+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.217013s][吞吐率：4.61req/s] [内存消耗：2,571.53kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T21:59:40+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:00:41+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/javascript
+[ info ] www.php.demo/admins.php/admins/Home/javascript [运行时间：0.108006s][吞吐率：9.26req/s] [内存消耗：1,650.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'javascript',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:01:23+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.194011s][吞吐率：5.15req/s] [内存消耗：2,571.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-08T22:01:23+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:12:20+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,616.50kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:12:22+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.827048s][吞吐率：1.21req/s] [内存消耗：2,572.73kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.643037s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T22:12:22+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:12:33+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.132008s][吞吐率：7.58req/s] [内存消耗：2,425.14kb] [文件加载：53]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T22:12:33+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:14:19+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.166010s][吞吐率：6.02req/s] [内存消耗：2,572.62kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T22:14:19+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:14:26+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/admins.php/admins/account/logout
+[ info ] www.php.demo/admins.php/admins/Home/admins.php/admins/account/logout [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：1,651.01kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'admins.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'admins' => 'account',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:16:27+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/index
+[ info ] www.php.demo/admins.php/admins/Home/index [运行时间：0.166010s][吞吐率：6.02req/s] [内存消耗：2,572.63kb] [文件加载：55]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->index[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\index.html [ array (
+  0 => 'admin',
+  1 => 'site',
+  2 => 'role',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_groups` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_groups` WHERE  `gid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menus` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menus` WHERE  (  mid in(1,4,9,5,6,2,12,13,3,10,11) and ishidden=0 and status=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sites` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `sites` WHERE  `names` = 'site' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-08T22:16:27+08:00 ] 127.0.0.1 GET /admins.php/admins/Home/welcome
+[ info ] www.php.demo/admins.php/admins/Home/welcome [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：1,616.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'Home',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admins\controller\Home->welcome[ D:\WWW\video\application\admins\controller\Home.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\home\welcome.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:16:32+08:00 ] 127.0.0.1 GET /admins.php/admins/account/logout
+[ info ] www.php.demo/admins.php/admins/account/logout [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,563.74kb] [文件加载：41]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'account',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admins\controller\Account->logout[ D:\WWW\video\application\admins\controller\Account.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:16:33+08:00 ] 127.0.0.1 GET /admins.php/admins/account/login
+[ info ] www.php.demo/admins.php/admins/account/login [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：1,657.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admins',
+    1 => 'account',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/Home/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admins\controller\Account->login[ D:\WWW\video\application\admins\controller\Account.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/admins\view\account\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-08T22:16:34+08:00 ] 127.0.0.1 GET /admins.php/captcha.html
+[ info ] www.php.demo/admins.php/captcha.html [运行时间：0.188011s][吞吐率：5.32req/s] [内存消耗：1,365.74kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/admins.php/admins/account/login',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; PHPSESSID=vd0rovc2t5tco8c4pq089hm842',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\WWW\video\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,161 @@
+---------------------------------------------------------------
+[ 2018-07-18T11:29:10+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T11:29:52+08:00 ] 127.0.0.1 GET /admins.php/admins/Test
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T11:29:59+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T11:33:19+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T11:34:55+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T11:36:32+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:03+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=127.0.0.1;port=3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.006001s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:05+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:23+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=localhost:3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:24+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;port=localhost:3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:24+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=localhost:3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:24+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;port=localhost:3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:40:24+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=localhost:3306;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:05+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:06+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:06+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:28+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:31+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:32+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:33+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:33+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:33+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:33+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:37:46+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T13:38:08+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:33:14+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.354021s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.074004s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:34:25+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T15:34:35+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+---------------------------------------------------------------
+[ 2018-07-18T15:35:50+08:00 ] 127.0.0.1 GET /admins.php/admins/Test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:45:37+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:45:38+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.033001s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:45:38+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:45:39+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:46:09+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-18T15:58:32+08:00 ] 127.0.0.1 GET /admins.php/admins/test/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admins` [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `admins` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]

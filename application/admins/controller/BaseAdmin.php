@@ -15,6 +15,7 @@ class BaseAdmin extends Controller
             header('Location:/admins.php/admins/Account/login');
             exit;
         }
+        $this->assign('admin',$this->_admin);
         $this->db = new Sysdb;
     }
 }

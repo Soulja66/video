@@ -56,4 +56,5 @@ class Account extends Controller
         session('admin',null);
         exit(json_encode(array('code'=>0,'msg'=>'退出成功')));
     }
+
 }
