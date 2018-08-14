@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:61:"D:\WWW\video\public/../application/admins\view\roles\add.html";i:1534253971;}*/ ?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:61:"D:\WWW\video\public/../application/admins\view\roles\add.html";i:1534255762;}*/ ?>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>角色添加</title>
@@ -19,6 +19,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">权限菜单</label>
         <?php if(is_array($menus) || $menus instanceof \think\Collection || $menus instanceof \think\Paginator): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+	<hr>
         <div class="layui-input-block">
             <input  type="checkbox" name="menu[<?php echo $vo['mid']; ?>]" title="<?php echo $vo['title']; ?>" lay-skin="primary"
                     <?php echo isset($role['rights']) && $role['rights']
