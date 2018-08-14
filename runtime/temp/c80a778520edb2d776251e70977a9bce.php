@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\WWW\video\public/../application/admins\view\site\index.html";i:1533735919;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\WWW\video\public/../application/admins\view\site\index.html";i:1534253971;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
