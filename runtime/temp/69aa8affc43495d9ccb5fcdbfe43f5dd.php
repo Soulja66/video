@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\WWW\video\public/../application/admins\view\account\login.html";i:1531985449;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\WWW\video\public/../application/admins\view\account\login.html";i:1534253971;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

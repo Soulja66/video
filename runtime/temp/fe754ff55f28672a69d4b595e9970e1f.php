@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\WWW\video\public/../application/admins\view\slide\index.html";i:1534251828;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\WWW\video\public/../application/admins\view\slide\index.html";i:1534685897;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,9 +70,10 @@
 
     function del(id) {
         layer.confirm('确定要删除吗？', {
+            icon:3,
             btn: ['确定','取消'] //按钮
         }, function(){
-            $.post('/admins.php/admins/Admin/delete',{'id':id},function (res) {
+            $.post('/admins.php/admins/slide/delete',{'id':id},function (res) {
                 if(res.code>0){
                     layer.alert(res.msg,{icon:2});
                 }else{
