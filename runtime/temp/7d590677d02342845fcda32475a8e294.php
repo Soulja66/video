@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\WWW\video\public/../application/admins\view\labels\charge.html";i:1533972580;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\WWW\video\public/../application/admins\view\labels\charge.html";i:1534728056;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

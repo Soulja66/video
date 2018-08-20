@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\WWW\video\public/../application/admins\view\slide\add_first.html";i:1534684876;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\WWW\video\public/../application/admins\view\slide\add_first.html";i:1534728056;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
