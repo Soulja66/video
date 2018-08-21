@@ -16,7 +16,9 @@ class Index extends Controller
     {
         // 幻灯片
         $slide_list = $this->db->table('slide')->where(array('type'=>0))->lists();
+        $channel_list = $this->db->table('video_label')->where(array('flag'=>'channel'))->pages(8);
 
+        $this->assign('channel_list',$channel_list['lists']);
         $this->assign('data',$slide_list);
         return $this->fetch();
     }
