@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\WWW\video\public/../application/index\view\index\index.html";i:1534745820;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\WWW\video\public/../application/index\view\index\index.html";i:1535117665;}*/ ?>
 <html lang="zh-CN">
 <head>
     <script src="//datax.baidu.com/x.js?si=&amp;dm=www.iqiyi.com"></script>
@@ -1985,48 +1985,16 @@
                         <div class="qy-nav-inner qy-nav-1336">
                             <div class="qy-nav-wrap">
                                 <div id="nav_sec_K1" class="nav-item nav-item-0">
+                                    <?php if(is_array($channel_list) || $channel_list instanceof \think\Collection || $channel_list instanceof \think\Paginator): $i = 0; $__LIST__ = $channel_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cvo): $mod = ($i % 2 );++$i;if($i%2 == 1): ?>
                                     <div class="nav-list">
                                         <div class="nav-list-item"><a target="_blank" rseat="712211_channel_yule"
-                                                                      href="//yule.iqiyi.com"
-                                                                      class="nav-list-link">娱乐</a></div>
+                                                                      href="/index.php/index/index/cate?label_channel=<?php echo $cvo['id']; ?>" class="nav-list-link"><?php echo $cvo['title']; ?></a>
+                                        </div>
                                         <div class="nav-list-item"><a target="_blank" rseat="712211_channel_zixun"
-                                                                      href="//news.iqiyi.com"
-                                                                      class="nav-list-link">资讯</a></div>
-                                    </div>
-                                    <div class="nav-list">
-                                        <div class="nav-list-item">
-                                            <div><a target="_blank" rseat="712211_channel_dianying"
-                                                    href="//www.iqiyi.com/dianying/" class="nav-list-link">电影</a></div>
-                                            <div style="display: none;"><!----></div>
-                                        </div>
-                                        <div class="nav-list-item"><a target="_blank"
-                                                                      rseat="712211_channel_wangluodianying"
-                                                                      href="//www.iqiyi.com/weidianying/"
-                                                                      class="nav-list-link">网络电影</a></div>
-                                    </div>
-                                    <div class="nav-list">
-                                        <div class="nav-list-item">
-                                            <div><a target="_blank" rseat="712211_channel_dianshiju"
-                                                    href="//www.iqiyi.com/dianshiju/" class="nav-list-link">电视剧</a>
-                                            </div>
-                                            <div style="display: none;"><!----></div>
-                                        </div>
-                                        <div class="nav-list-item"><a target="_blank" rseat="712211_channel_pianhua"
-                                                                      href="//trailer.iqiyi.com" class="nav-list-link">片花</a>
+                                                                      href="/index.php/index/index/cate?label_channel=<?php echo $channel_list[$key + 1]['id']?>" class="nav-list-link"><?php echo $channel_list[$key + 1]['title']?></a>
                                         </div>
                                     </div>
-                                    <div class="nav-list">
-                                        <div class="nav-list-item">
-                                            <div><a target="_blank" rseat="712211_channel_zongyi"
-                                                    href="//www.iqiyi.com/zongyi/" class="nav-list-link">综艺</a></div>
-                                            <div style="display: none;"><!----></div>
-                                        </div>
-                                        <div class="nav-list-item">
-                                            <div><a target="_blank" rseat="712211_channel_tuokouxiu"
-                                                    href="//talkshow.iqiyi.com/" class="nav-list-link">脱口秀</a></div>
-                                            <div style="display: none;"><!----></div>
-                                        </div>
-                                    </div>
+                                    <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
                                 <div id="nav_sec_K2" class="nav-item nav-item-1">
                                     <div class="nav-list">
@@ -2576,70 +2544,27 @@
                             <div id="block-FA" class="col-right" data-asyn-pb="true">
                                 <div class="qy-mod-list mb">
                                     <ul class="qy-mod-ul">
+                                        <?php if(is_array($today_hot_list) || $today_hot_list instanceof \think\Collection || $today_hot_list instanceof \think\Paginator): $i = 0; $__LIST__ = $today_hot_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$thl_vo): $mod = ($i % 2 );++$i;?>
                                         <li class="qy-mod-li">
                                             <div class="qy-mod-img horizon">
                                                 <div class="qy-mod-link-wrap"><a
-                                                        href="https://www.iqiyi.com/v_19rqyqhqo4.html" target="_blank"
-                                                        title="吴亦凡陷纠结满舒克遭淘汰" class="qy-mod-link"><img
-                                                        src="//pic1.iqiyipic.com/common/lego/20180819/47d955d7e0d44cfe89f87dc2f812f1d5.jpg"
-                                                        rseat="712211_focus_juchangimage" alt="吴亦凡陷纠结满舒克遭淘汰"
-                                                        class="qy-mod-cover"></a></div>
+                                                        href="/index/play?id=<?php echo $thl_vo['id']; ?>"
+                                                        target="_blank" title="<?php echo $thl_vo['title']; ?>" class="qy-mod-link"><img
+                                                        src="<?php echo $thl_vo['img']; ?>"
+                                                        rseat="712211_focus_juchangimage" alt="<?php echo $thl_vo['title']; ?>"
+                                                        class="qy-mod-cover">
+                                                    <div class="icon-tl"></div>
+                                                    <div class="icon-bl"></div>
+                                                </a></div>
                                                 <div class="title-wrap"><p class="main"><a target="_blank"
-                                                                                           title="吴亦凡陷纠结满舒克遭淘汰"
-                                                                                           href="https://www.iqiyi.com/v_19rqyqhqo4.html"
+                                                                                           title="<?php echo $thl_vo['title']; ?>"
+                                                                                           href="/index/play?id=<?php echo $thl_vo['id']; ?>"
                                                                                            rseat="712211_focus_juchangtitle"
-                                                                                           class="link-txt">吴亦凡陷纠结满舒克遭淘汰</a>
+                                                                                           class="link-txt"><?php echo $thl_vo['title']; ?></a>
                                                 </p></div>
                                             </div>
                                         </li>
-                                        <li class="qy-mod-li">
-                                            <div class="qy-mod-img horizon">
-                                                <div class="qy-mod-link-wrap"><a
-                                                        href="https://www.iqiyi.com/v_19rqyyn6kw.html?list=19rrm7otji"
-                                                        target="_blank" title="耿乐儿子成最小萌娃" class="qy-mod-link"><img
-                                                        src="//pic3.iqiyipic.com/common/lego/20180818/215e5ce86c42473082ec0a502b8da59f.jpg"
-                                                        rseat="712211_focus_juchangimage" alt="耿乐儿子成最小萌娃"
-                                                        class="qy-mod-cover"></a></div>
-                                                <div class="title-wrap"><p class="main"><a target="_blank"
-                                                                                           title="耿乐儿子成最小萌娃"
-                                                                                           href="https://www.iqiyi.com/v_19rqyyn6kw.html?list=19rrm7otji"
-                                                                                           rseat="712211_focus_juchangtitle"
-                                                                                           class="link-txt">耿乐儿子成最小萌娃</a>
-                                                </p></div>
-                                            </div>
-                                        </li>
-                                        <li class="qy-mod-li">
-                                            <div class="qy-mod-img horizon">
-                                                <div class="qy-mod-link-wrap"><a
-                                                        href="//www.iqiyi.com/kszt/iqingchunjuchang.html"
-                                                        target="_blank" title="爱青春：香蜜沉沉烬如霜" class="qy-mod-link"><img
-                                                        src="//pic0.iqiyipic.com/common/lego/20180817/3b7e83e0ea70491a87153e842c6cdaa2.jpg"
-                                                        rseat="712211_focus_juchangimage" alt="爱青春：香蜜沉沉烬如霜"
-                                                        class="qy-mod-cover"></a></div>
-                                                <div class="title-wrap"><p class="main"><a target="_blank"
-                                                                                           title="爱青春：香蜜沉沉烬如霜"
-                                                                                           href="//www.iqiyi.com/kszt/iqingchunjuchang.html"
-                                                                                           rseat="712211_focus_juchangtitle"
-                                                                                           class="link-txt">爱青春：香蜜沉沉烬如霜</a>
-                                                </p></div>
-                                            </div>
-                                        </li>
-                                        <li class="qy-mod-li">
-                                            <div class="qy-mod-img horizon">
-                                                <div class="qy-mod-link-wrap"><a
-                                                        href="https://www.iqiyi.com/v_19rqypn634.html?list=19rrmg8gbi"
-                                                        target="_blank" title="爱奇艺尖叫之夜演唱会纯享" class="qy-mod-link"><img
-                                                        src="//pic1.iqiyipic.com/common/lego/20180819/d088755d68454011a60002759b0a260a.jpg"
-                                                        rseat="712211_focus_juchangimage" alt="爱奇艺尖叫之夜演唱会纯享"
-                                                        class="qy-mod-cover"></a></div>
-                                                <div class="title-wrap"><p class="main"><a target="_blank"
-                                                                                           title="爱奇艺尖叫之夜演唱会纯享"
-                                                                                           href="https://www.iqiyi.com/v_19rqypn634.html?list=19rrmg8gbi"
-                                                                                           rseat="712211_focus_juchangtitle"
-                                                                                           class="link-txt">爱奇艺尖叫之夜演唱会纯享</a>
-                                                </p></div>
-                                            </div>
-                                        </li>
+                                        <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </ul>
                                 </div>
                                 <div class="qy-mod-list mb">
