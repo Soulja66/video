@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\WWW\video\public/../application/index\view\index\index.html";i:1535117665;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\WWW\video\public/../application/index\view\index\index.html";i:1535382237;}*/ ?>
 <html lang="zh-CN">
 <head>
     <script src="//datax.baidu.com/x.js?si=&amp;dm=www.iqiyi.com"></script>

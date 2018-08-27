@@ -28,11 +28,30 @@ class Index extends Controller
     }
 
     public function cate(){
-        //导航标签
-        $channel_list = $this->db->table('video_label')->where(array('flag'=>'channel'))->lists();
-        $charge_list = $this->db->table('video_label')->where(array('flag'=>'charge'))->lists();
-        $area_list = $this->db->table('video_label')->where(array('flag'=>'area'))->lists();
+        $data['label_channel'] = (int)input('get.label_channel');
+        $data['label_charge'] = (int)input('get.label_charge');
+        $data['label_area'] = (int)input('get.label_area');
 
+        //导航标签
+        $channel_list = $this->db->table('video_label')->where(array('flag'=>'channel'))->cates('id');
+        $charge_list = $this->db->table('video_label')->where(array('flag'=>'charge'))->cates('id');
+        $area_list = $this->db->table('video_label')->where(array('flag'=>'area'))->cates('id');
+
+        $data['pageSize'] = 1;
+        $data['page'] = max(1,(int)input('get.page'));
+        $where['status'] = 1;
+        if ($data['label_channel']){
+            $where['channel_id'] = $data['label_channel'];
+        }
+        if ($data['label_charge']){
+            $where['charge_id'] = $data['label_charge'];
+        }
+        if ($data['label_area']){
+            $where['area_id'] = $data['label_area'];
+        }
+        $data['data'] = $this->db->table('video')->where($where)->pages($data['pageSize']);
+
+        $this->assign('data',$data);
         $this->assign('channel_list',$channel_list);
         $this->assign('charge_list',$charge_list);
         $this->assign('area_list',$area_list);

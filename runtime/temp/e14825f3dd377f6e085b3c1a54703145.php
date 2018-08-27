@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:61:"D:\WWW\video\public/../application/index\view\index\cate.html";i:1535119968;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:61:"D:\WWW\video\public/../application/index\view\index\cate.html";i:1535384155;}*/ ?>
 
 <!DOCTYPE html>
 <html>
@@ -633,12 +633,12 @@
                 <div class="mod_sear_list" data-widget-expcol="expcol" data-expcol-cls="mod_sear_list_open">
                     <h3>频道：</h3>
                     <ul class="mod_category_item">
-                        <li class="selected">
-                            <a href="#">全部</a>
+                        <li <?php if(!in_array($data['label_channel'],array_keys($channel_list))){echo 'class="selected"';}?>>
+                            <a href="/index.php/index/index/cate?label_channel=0&label_charge=<?php echo $data['label_charge']; ?>&label_area=<?php echo $data['label_area']; ?>">全部</a>
                         </li>
                         <?php if(is_array($channel_list) || $channel_list instanceof \think\Collection || $channel_list instanceof \think\Paginator): $i = 0; $__LIST__ = $channel_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
-                        <li ><!--class="selected"-->
-                            <a href="/www/2/----------------iqiyi--.html"><?php echo $channel['title']; ?></a>
+                        <li <?php if($data['label_channel'] == $channel['id']): ?> class="selected" <?php endif; ?>><!--class="selected"-->
+                            <a href="/index.php/index/index/cate?label_channel=<?php echo $channel['id']; ?>&label_charge=<?php echo $data['label_charge']; ?>&label_area=<?php echo $data['label_area']; ?>"><?php echo $channel['title']; ?></a>
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -653,12 +653,12 @@
                 <div class="mod_sear_list">
                     <h3>资费：</h3>
                     <ul class="mod_category_item">
-                        <li  class="selected" >
-                            <a href="/www/2/-------------11-1-1-iqiyi--.html">全部</a>
+                        <li <?php if(!in_array($data['label_charge'],array_keys($charge_list))){echo 'class="selected"';}?>>
+                            <a href="/index.php/index/index/cate?label_channel=<?php echo $data['label_channel']; ?>&label_charge=0&label_area=<?php echo $data['label_area']; ?>">全部</a>
                         </li>
                         <?php if(is_array($charge_list) || $charge_list instanceof \think\Collection || $charge_list instanceof \think\Paginator): $i = 0; $__LIST__ = $charge_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$charge): $mod = ($i % 2 );++$i;?>
-                        <li >
-                            <a href="/www/2/----------0---11-1-1-iqiyi--.html"><?php echo $charge['title']; ?></a>
+                        <li <?php if($data['label_charge'] == $charge['id']): ?> class="selected" <?php endif; ?>>
+                            <a href="/index.php/index/index/cate?label_channel=<?php echo $data['label_channel']; ?>&label_charge=<?php echo $charge['id']; ?>&label_area=<?php echo $data['label_area']; ?>"><?php echo $charge['title']; ?></a>
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
                     </ul>
@@ -669,12 +669,12 @@
                 <div class="mod_sear_list  mod_sear_list_open       " >
                     <h3>地区：</h3>
                     <ul class="mod_category_item">
-                        <li class="selected">
-                            <a href="#">全部</a>
+                        <li <?php if(!in_array($data['label_area'],array_keys($area_list))){echo 'class="selected"';}?>>
+                            <a href="/index.php/index/index/cate?label_channel=<?php echo $data['label_channel']; ?>&label_charge=<?php echo $data['label_charge']; ?>&label_area=0">全部</a>
                         </li>
                         <?php if(is_array($area_list) || $area_list instanceof \think\Collection || $area_list instanceof \think\Paginator): $i = 0; $__LIST__ = $area_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$area): $mod = ($i % 2 );++$i;?>
-                        <li>
-                            <a href="/www/2/15-------------11-1-1-iqiyi--.html"><?php echo $area['title']; ?></a>
+                        <li <?php if($data['label_area'] == $area['id']): ?> class="selected" <?php endif; ?>>
+                            <a href="/index.php/index/index/cate?label_channel=<?php echo $data['label_channel']; ?>&label_charge=<?php echo $data['label_charge']; ?>&label_area=<?php echo $area['id']; ?>"><?php echo $area['title']; ?></a>
                         </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
                     </ul>
@@ -934,19 +934,21 @@
                 <div class="wrapper-piclist" data-widget-listviptip="listviptip">
                     <ul class="site-piclist site-piclist-180236 site-piclist-auto">
 
+                        <?php if(is_array($data['data']['lists']) || $data['data']['lists'] instanceof \think\Collection || $data['data']['lists'] instanceof \think\Paginator): $i = 0; $__LIST__ = $data['data']['lists'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                         <li>
                             <div class="site-piclist_pic">
+
                                 <a
                                         data-qidanadd-exclusive="1"
                                         data-qidanadd-albumid="207834001"
                                         data-qidanadd-episode="0"  data-qidanadd-channelid="2" data-qidanadd-tvid="1177939300" data-qidanadd-vip="0" data-widget-qidanadd="qidanadd"
                                         data-searchpingback-elem="link"
-                                        data-searchpingback-param="page=1&target=1ad84b4a69103485931c92bcb3fc0015&ptype=1-1&site=iqiyi&pos=1" data-qipuid="207834001" alt="延禧攻略" title="延禧攻略"
-                                        href="http://www.iqiyi.com/a_19rrh7u4fx.html#vfrm=2-4-0-1"
+                                        data-searchpingback-param="page=1&target=1ad84b4a69103485931c92bcb3fc0015&ptype=1-1&site=iqiyi&pos=1" data-qipuid="207834001" alt="<?php echo $vo['title']; ?>" title="<?php echo $vo['title']; ?>"
+                                        href="/index.php/index/index/video?id=<?php echo $vo['id']; ?>"
                                         class="site-piclist_pic_link"
                                         target="_blank">
-                                    <img width="180" height="236" rseat="dsjp7" alt="延禧攻略"
-                                         title="延禧攻略"             src = "//pic4.iqiyipic.com/image/20180822/60/ab/a_100056295_m_601_m20_180_236.jpg"
+                                    <img width="180" height="236" rseat="dsjp7" alt="<?php echo $vo['title']; ?>"
+                                         title="<?php echo $vo['title']; ?>"             src = "<?php echo $vo['img']; ?>"
                                     />
 
                                     <p class="video_dj " data-search-pay="ico" data-qidanadd-ele="definition"></p>
@@ -969,7 +971,7 @@
                                     <p class="site-piclist_info_title ">
                                         <a data-searchpingback-elem="link"
                                            data-searchpingback-param="target=1ad84b4a69103485931c92bcb3fc0015&ptype=1-2&page=1&site=iqiyi&pos=1"
-                                           rseat="bigTitle" title="延禧攻略"  href="http://www.iqiyi.com/a_19rrh7u4fx.html#vfrm=2-4-0-1"                                              target="_blank">延禧攻略</a>
+                                           rseat="bigTitle" title="<?php echo $vo['title']; ?>"  href="index.php/index/index/video?id=<?php echo $vo['id']; ?>" target="_blank"><?php echo $vo['title']; ?></a>
                                     </p>
                                 </div>
                                 <div class="role_info">
@@ -1057,6 +1059,7 @@
                                 </div>
                             </div>
                         </li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
 
                         <li>
                             <div class="site-piclist_pic">
@@ -4045,9 +4048,58 @@
         </div>
     </div>
 </div>
+<input type="hidden" id="label_channel" value="<?php echo $data['label_channel']; ?>">
+<input type="hidden" id="label_charge" value="<?php echo $data['label_charge']; ?>">
+<input type="hidden" id="label_area" value="<?php echo $data['label_area']; ?>">
+
+<link rel="stylesheet" type="text/css" href="/static/plugins/layui/css/layui.css">
+<style type="text/css">
+    #pages em{background-color: #699e00;}
+</style>
+<script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
+<script type="text/javascript">
+    layui.use(['laypage'],function(){
+        //$ = layui.jquery;
+        laypage = layui.laypage;
+
+        laypage.render({
+                elem: 'pages'
+                ,count: <?php echo $data['data']['total']; ?>
+                ,limit: <?php echo $data['pageSize']; ?>
+                ,curr: <?php echo $data['page']; ?>
+                ,jump: function(obj, first){
+                //首次不执行
+                if(!first){
+                    searchs(obj.curr);
+            }
+        }
+    });
+    });
+    
+    function searchs(page) {
+        var label_channel = document.getElementById('label_channel').value;
+        var label_charge = document.getElementById('label_charge').value;
+        var label_area = document.getElementById('label_area').value;
+
+        var url = '/index.php/index/index/cate?rand='+Math.random();
+        if(label_channel){
+            url = url + '&label_channel' + label_channel;
+
+        }
+        if(label_charge){
+            url = url + '&label_charge' + label_charge;
+
+        }
+        if(label_area){
+            url = url + '&label_area' + label_area;
+
+        }
+        window.location.href = url + '&page='+page;
+    }
+</script>
 <!-- 页码 开始 -->
-<div data-ugcplayhistory-elem="pager" class="mod-page">
-    <span class="noPage">上一页</span> <span data-key="1" class="curPage">1</span> <a data-key="2" data-search-page="item" title="跳转至第2页" href="/www/2/-------------11-2-1-iqiyi--.html">2</a> <a data-key="3" data-search-page="item" title="跳转至第3页" href="/www/2/-------------11-3-1-iqiyi--.html">3</a> <a data-key="4" data-search-page="item" title="跳转至第4页" href="/www/2/-------------11-4-1-iqiyi--.html">4</a> <a data-key="5" data-search-page="item" title="跳转至第5页" href="/www/2/-------------11-5-1-iqiyi--.html">5</a> <a data-key="6" data-search-page="item" title="跳转至第6页" href="/www/2/-------------11-6-1-iqiyi--.html">6</a> <a data-key="7" data-search-page="item" title="跳转至第7页" href="/www/2/-------------11-7-1-iqiyi--.html">7</a> <a data-key="8" data-search-page="item" title="跳转至第8页" href="/www/2/-------------11-8-1-iqiyi--.html">8</a> <a data-key="9" data-search-page="item" title="跳转至第9页" href="/www/2/-------------11-9-1-iqiyi--.html">9</a> <a data-key="10" data-search-page="item" title="跳转至第10页" href="/www/2/-------------11-10-1-iqiyi--.html">10</a> <a data-key="down" class="a1" data-search-page="item" title="跳转至2页" href="/www/2/-------------11-2-1-iqiyi--.html">下一页</a>
+<div data-ugcplayhistory-elem="pager" class="mod-page" id="pages">
+    <!--<span class="noPage">上一页</span> <span data-key="1" class="curPage">1</span> <a data-key="2" data-search-page="item" title="跳转至第2页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-2-1-iqiyi&#45;&#45;.html">2</a> <a data-key="3" data-search-page="item" title="跳转至第3页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-3-1-iqiyi&#45;&#45;.html">3</a> <a data-key="4" data-search-page="item" title="跳转至第4页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-4-1-iqiyi&#45;&#45;.html">4</a> <a data-key="5" data-search-page="item" title="跳转至第5页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-5-1-iqiyi&#45;&#45;.html">5</a> <a data-key="6" data-search-page="item" title="跳转至第6页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-6-1-iqiyi&#45;&#45;.html">6</a> <a data-key="7" data-search-page="item" title="跳转至第7页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-7-1-iqiyi&#45;&#45;.html">7</a> <a data-key="8" data-search-page="item" title="跳转至第8页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-8-1-iqiyi&#45;&#45;.html">8</a> <a data-key="9" data-search-page="item" title="跳转至第9页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-9-1-iqiyi&#45;&#45;.html">9</a> <a data-key="10" data-search-page="item" title="跳转至第10页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-10-1-iqiyi&#45;&#45;.html">10</a> <a data-key="down" class="a1" data-search-page="item" title="跳转至2页" href="/www/2/-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;11-2-1-iqiyi&#45;&#45;.html">下一页</a>-->
 </div>
 <div class="site-main">
     <!--列表页底部通栏广告-->
