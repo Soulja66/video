@@ -58,4 +58,12 @@ class Index extends Controller
 
         return $this->fetch();
     }
+
+    public function video(){
+        $id = (int)input('get.id');
+        $video = $this->db->table('video')->where(array('id'=>$id))->item();
+
+        $this->assign('video',$video);
+        return $this->fetch();
+    }
 }

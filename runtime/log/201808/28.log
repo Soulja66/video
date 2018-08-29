@@ -1,0 +1,878 @@
+---------------------------------------------------------------
+[ 2018-08-28T20:39:26+08:00 ] 127.0.0.1 GET /
+[ info ] www.php.demo/ [运行时间：0.512029s][吞吐率：1.95req/s] [内存消耗：3,420.28kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535114291.1535289588.6; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534768460,1534854931,1535114290,1535289588; QC006=2r9538hat3tslhrwllguldnb; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\index.html [ array (
+  0 => 'today_hot_list',
+  1 => 'channel_list',
+  2 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `slide` [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT * FROM `slide` WHERE  `type` = 0 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.080005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video_label` WHERE  `flag` = 'channel' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' LIMIT 0,8 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.091006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `channel_id` = 3  AND `status` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `channel_id` = 3  AND `status` = 1 LIMIT 0,4 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T22:43:18+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=1
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=1 [运行时间：0.274016s][吞吐率：3.65req/s] [内存消耗：2,795.56kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535459967; QC008=1534686874.1535289588.1535459970.7; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=164097148; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 1 LIMIT 0,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T22:43:25+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=4
+[ info ] www.php.demo/index.php/index/index/video?id=4 [运行时间：0.160009s][吞吐率：6.25req/s] [内存消耗：2,249.44kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535459967; QC008=1534686874.1535289588.1535459970.7; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=262146639; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T22:43:40+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0 [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：2,795.18kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=188745704; nu=0; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535467407; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '2',
+  'label_charge' => '0',
+  'label_area' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 2 LIMIT 0,1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-28T22:43:43+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=7
+[ info ] www.php.demo/index.php/index/index/video?id=7 [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,770.72kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535467407; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=269280690; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:09:32+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=7
+[ info ] www.php.demo/index.php/index/index/video?id=7 [运行时间：0.348020s][吞吐率：2.87req/s] [内存消耗：1,770.71kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=76490198; nu=0; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535467424; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:13:32+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=7
+[ info ] www.php.demo/index.php/index/index/video?id=7 [运行时间：0.166009s][吞吐率：6.02req/s] [内存消耗：1,770.72kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535468974; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=180317415; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:14:11+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0 [运行时间：0.484027s][吞吐率：2.07req/s] [内存消耗：2,795.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC010=91718617; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '2',
+  'label_charge' => '0',
+  'label_area' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 2 LIMIT 1 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 2 LIMIT 0,1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:14:21+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=3&label_charge=0&label_area=0
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=3&label_charge=0&label_area=0 [运行时间：0.135007s][吞吐率：7.41req/s] [内存消耗：2,796.53kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=2&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=114298564; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '3',
+  'label_charge' => '0',
+  'label_area' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 3 LIMIT 0,1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:14:25+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?rand=0.33507956503636405&label_channel3&label_charge0&label_area0&page=2
+[ info ] www.php.demo/index.php/index/index/cate?rand=0.33507956503636405&label_channel3&label_charge0&label_area0&page=2 [运行时间：0.135007s][吞吐率：7.41req/s] [内存消耗：2,796.58kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=3&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=38633952; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.33507956503636405',
+  'label_channel3' => '',
+  'label_charge0' => '',
+  'label_area0' => '',
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1 LIMIT 1,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:14:31+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0 [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：2,796.21kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?rand=0.33507956503636405&label_channel3&label_charge0&label_area0&page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=269823666; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '1',
+  'label_charge' => '0',
+  'label_area' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 1 LIMIT 0,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:14:33+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=3&label_charge=0&label_area=0
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=3&label_charge=0&label_area=0 [运行时间：0.157009s][吞吐率：6.37req/s] [内存消耗：2,796.53kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=98028508; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '3',
+  'label_charge' => '0',
+  'label_area' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 3 LIMIT 0,1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:14:36+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?rand=0.008159460235185323&label_channel3&label_charge0&label_area0&page=2
+[ info ] www.php.demo/index.php/index/index/cate?rand=0.008159460235185323&label_channel3&label_charge0&label_area0&page=2 [运行时间：0.151009s][吞吐率：6.62req/s] [内存消耗：2,796.60kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=3&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=97911900; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.008159460235185323',
+  'label_channel3' => '',
+  'label_charge0' => '',
+  'label_area0' => '',
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1 LIMIT 1,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:14:55+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?rand=0.9530745564036593&label_channel0&label_charge0&label_area0&page=3
+[ info ] www.php.demo/index.php/index/index/cate?rand=0.9530745564036593&label_channel0&label_charge0&label_area0&page=3 [运行时间：0.136007s][吞吐率：7.35req/s] [内存消耗：2,796.80kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?rand=0.008159460235185323&label_channel3&label_charge0&label_area0&page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=14648436; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.9530745564036593',
+  'label_channel0' => '',
+  'label_charge0' => '',
+  'label_area0' => '',
+  'page' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1 LIMIT 2,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:15:03+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?rand=0.9025012589430832&label_channel0&label_charge0&label_area0&page=5
+[ info ] www.php.demo/index.php/index/index/cate?rand=0.9025012589430832&label_channel0&label_charge0&label_area0&page=5 [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：2,796.66kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?rand=0.9530745564036593&label_channel0&label_charge0&label_area0&page=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=32867197; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.9025012589430832',
+  'label_channel0' => '',
+  'label_charge0' => '',
+  'label_area0' => '',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1 LIMIT 4,1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:15:10+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0 [运行时间：0.158009s][吞吐率：6.33req/s] [内存消耗：2,796.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?rand=0.9025012589430832&label_channel0&label_charge0&label_area0&page=5',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=33476477; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '1',
+  'label_charge' => '0',
+  'label_area' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 1 LIMIT 0,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:15:22+08:00 ] 127.0.0.1 GET /index.php/index/index/cate?label_channel=2
+[ info ] www.php.demo/index.php/index/index/cate?label_channel=2 [运行时间：0.124007s][吞吐率：8.06req/s] [内存消耗：2,794.76kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=119031370; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'label_channel' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->cate[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\cate.html [ array (
+  0 => 'data',
+  1 => 'channel_list',
+  2 => 'charge_list',
+  3 => 'area_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=video;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video_label` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'channel' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'charge' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `video_label` WHERE  `flag` = 'area' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `video` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `video` WHERE  `status` = 1  AND `channel_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `video` WHERE  `status` = 1  AND `channel_id` = 2 LIMIT 0,1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-28T23:16:24+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=4
+[ info ] www.php.demo/index.php/index/index/video?id=4 [运行时间：0.192011s][吞吐率：5.21req/s] [内存消耗：2,579.63kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469215; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=213888727; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:16:44+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=4
+[ info ] www.php.demo/index.php/index/index/video?id=4 [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：1,882.88kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469385; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=138252019; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:17:34+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=4
+[ info ] www.php.demo/index.php/index/index/video?id=4 [运行时间：0.111007s][吞吐率：9.01req/s] [内存消耗：1,882.59kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/video?id=4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469406; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=130902860; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:25:49+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=4
+[ info ] www.php.demo/index.php/index/index/video?id=4 [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：2,101.17kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469454; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=36160739; nu=0; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T23:26:39+08:00 ] 127.0.0.1 GET /index.php/index/index/video?id=4
+[ info ] www.php.demo/index.php/index/index/video?id=4 [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：3,196.88kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\video\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'video',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.demo',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.php.demo/index.php/index/index/cate?label_channel=1&label_charge=0&label_area=0',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3767784448; __uuid=e80e1a41-b726-c03d-d642-10e3c0eacdf5; QC008=1534686874.1535289588.1535459970.7; QC007=DIRECT; QC006=2r9538hat3tslhrwllguldnb; QC010=99110365; nu=0; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1534854931,1535114290,1535289588,1535459967; Hm_lpvt_53b7374a63c37483e5dd97d78d9bb36e=1535469951; __dfp=a0e239ca73c77d4628a4cc0d705d301533d566fb58d1c5f0116445448e683cacf1@1535982289219@1534686289219',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Index->video[ D:\WWW\video\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\video\public/../application/index\view\index\video.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
